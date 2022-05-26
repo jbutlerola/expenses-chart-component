@@ -10,7 +10,7 @@ function App() {
     .toLocaleString("default", { weekday: "short" })
     .toLowerCase();
 
-  const [financialData, setFinancialData] = useState({
+  const [financialData] = useState({
     labels: data.map((data) => data.day),
     datasets: [
       {
