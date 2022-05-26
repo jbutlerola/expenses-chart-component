@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Nunito+Sans:wght@300;600;800&family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  font-size: 18px;
+  margin: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 0.1px)
+}
+
+.balance-wrapper {
+  background-color: var(--soft-red);
+  padding: 1.25rem;
+  border-radius: 0.6rem;
+}
+
+.bar-chart {
+  background-color: var(--very-pale-orange);
+  padding: 1.25rem;
+  border-radius: 0.6rem;
+}
+
+@media (max-width: 500px) {
+  .balance-wrapper {
+    width: 300px;
+  }
+
+  .bar-chart {
+    width: 300px;
+  }
+}
+
+@media (min-width: 500px) {
+  .balance-wrapper {
+    width: 400px;
+  }
+
+  .bar-chart {
+    width: 400px;
+  }
+}
